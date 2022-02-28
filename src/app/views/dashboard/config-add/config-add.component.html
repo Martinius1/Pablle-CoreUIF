@@ -1,1 +1,85 @@
-<p>config-add works!</p>
+<div class="whole-page">
+  <div class="config-name">
+    <label for="textbox" class="Config-name-label">Config Name</label>
+    <input type="text" id="textbox" name="textbox" placeholder="name" style="width: 30vw">
+  </div>
+  <div class="druhy-div">
+    <div class="jedna">
+      <label for="textbox" class="Config-name-label table-bordered">Add Computer</label>
+    </div>
+    <div class="dva">
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col" class="border-delete" style="width: 30vw;">Client</th>
+        </tr>
+        </thead>
+        <tbody class="border-delete">
+        <tr >
+          <input type="text" id="clientname" name="clientname" placeholder="name" style="width: 30vw;">
+        </tr>
+        <tr>
+          <input type="text" id="clientIP" name="clientIP" placeholder="IP" style="width: 30vw;">
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="padding-left: 15vw;padding-top: 2.5vh; ">
+      <button style="height: 8vh; width: 9vw; font-size: 1.25rem"> ADD </button>
+    </div>
+  </div>
+  <div class="treti-div">
+    <div class="druhy-div">
+      <div class="jedna treti-pad">
+        <label for="textbox" class="Config-name-label table-bordered">Add Source Path</label>
+      </div>
+      <div class="dva ">
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col" class="border-delete" id="name" style="width: 30vw;">source path</th>
+          </tr>
+          </thead>
+          <tbody class="border-delete">
+          <tr >
+            <input type="text" id="first" name="Path" placeholder="first path" style="width: 30vw;">
+          </tr>
+          <tr>
+            <input type="text" id="second" name="clientIP" placeholder="second path" style="width: 30vw;">
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="druhy-div border-delete">
+      <div class="jedna treti-pad">
+        <label for="textbox" class="Config-name-label table-bordered">Destination Path</label>
+      </div>
+      <div class="dva ">
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col" class="border-delete" id="dest-path" style="width: 30vw;">destination path</th>
+          </tr>
+          </thead>
+          <tbody class="border-delete">
+          <tr >
+            <input type="text" id="des-path-first" name="Path" placeholder="first path" style="width: 30vw;">
+          </tr>
+          <tr>
+            <input type="text" id="des-path-second" name="clientIP" placeholder="second path" style="width: 30vw;">
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="button-continue">
+  <button routerLink="/dashboard/configschedule">Continue</button>
+</div>
+
+

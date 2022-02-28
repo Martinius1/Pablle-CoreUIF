@@ -1,0 +1,95 @@
+.whole-page-schedule{
+  height: 100%;
+  /*button pro přepínání*/
+  .button-schedule{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px dotted black;
+    padding-bottom: 3vh;
+    .mat-button{
+      width: 25vw;
+      height: 10vh;
+    }
+
+  }
+
+  /*weekly*/
+  .weekly{
+    .schedule-day{
+      background-color: white;
+      height: 12vh;
+      padding-bottom: 5vh;
+      border-bottom: solid black 2px;
+    }
+    .schedule-time{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      height: 30vh;
+      label{
+        font-size: 1.5rem;
+        padding-right: 5vw;
+      }
+      input{
+        width: 10vw;
+        height: 5vh;
+        font-size: 1.4rem;
+
+
+      }
+    }
+  }
+
+  /*monthly*/
+  .monthly{
+    .date{
+      border-bottom: 2px solid black;
+    }
+    .date-date{    }
+    .schedule-time{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      height: 30vh;
+      label{
+        font-size: 1.5rem;
+        padding-right: 5vw;
+      }
+      input{
+        width: 10vw;
+        height: 5vh;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+
+
+.btn{
+  height: 6vh;
+  align-items: center;
+  justify-content: center;
+  color:black;
+
+}
+
+.btn-outline-primary{
+  color:black;
+  border-color:black;
+  display:flex;
+}
+
+.btn-check:checked+.btn-outline-primary{
+  background-color: darkgrey;
+  border-color: black;
+  object-fit: cover;
+}
+
+.mat-button{
+  font-size: 1.5rem;
+  background-color: lightgrey;
+
+}
+
