@@ -1,0 +1,28 @@
+.whole-page-computers{
+  display: flex;
+  height: 100%;
+  .buttons-column{
+    justify-content: left;
+    width: 40%;
+
+  }
+  .table-computer{
+    justify-content: right;
+    width: 100%;
+    display: flex;
+    height: 35vh;
+  }
+}
+
+
+
+
+.mx-auto {
+  margin-right:0px !important;
+  margin-left: 0px !important;
+}
+.groupy-padding{
+  padding-top: 1vh;
+}
+
+
