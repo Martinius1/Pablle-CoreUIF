@@ -1,1 +1,55 @@
-<p>config-type works!</p>
+<div class="whole-page-type">
+  <div style="display:flex; padding-bottom: 6vh; justify-content: center; height: 6vh; font-size: 2rem; border-bottom: 2px black dotted; padding-top: 3vh; ">
+    <p style=" ">Backup Time</p>
+  </div>
+  <div style="display: flex; align-items: center; justify-content: left; margin-top: 6vh;">
+    <div style="width: 50%; margin-left: 11vw;">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Full Backup
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Differential Backup
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+        <label class="form-check-label" for="flexRadioDefault3">
+          Incremental Backup
+        </label>
+      </div>
+    </div>
+    <div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+        <label class="form-check-label" for="flexCheckIndeterminate">
+          zip
+        </label>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="display: flex; justify-content: left; margin-top: 6vh; height: 12vh; border-bottom: solid black 1px;">
+    <div class="config-name">
+      <label for="textbox1" class=" Config-name-label" style="margin-left: 11vw; font-size: 2rem; margin-right: 31vw; ">Rollover:</label>
+      <input type="text" id="textbox1" name="textbox1" placeholder="name" style="width: 30vw; height: 9vh; font-size: 1.5rem; ">
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: left; margin-top: 6vh; height: 12vh; border-bottom: solid black 1px;">
+    <div class="config-name">
+      <label for="textbox2" class="Config-name-label" style="margin-left: 11vw; font-size: 2rem; margin-right: 19vw;">Package Keep Count:</label>
+      <input type="text" id="textbox2" name="textbox2" placeholder="name" style="width: 30vw; height: 9vh; font-size: 1.5rem; ">
+    </div>
+  </div>
+
+
+</div>
+<div class="button-continue" style="display: flex; justify-content: right; margin-top: 3vh; margin-right: 9vw;">
+  <button routerLink="/configurations/sample" style="height: 8vh; width: 9vw; font-size: 1.25rem" class="btn-primary" >Finish Configuration</button>
+</div>
