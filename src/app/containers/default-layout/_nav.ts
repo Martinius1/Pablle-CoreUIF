@@ -16,8 +16,8 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Computers',
-    iconComponent: { name: 'cil-arrow-thick-to-left' },
-    url: '/configurations'
+    iconComponent: { name: 'cil-speedometer' },
+    url: '/computers'
   },
   {
     name: 'Monitor',
