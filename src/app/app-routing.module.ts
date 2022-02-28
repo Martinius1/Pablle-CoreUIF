@@ -14,6 +14,7 @@ import {AlertLogComponent} from "./pages/logs/alert-log/alert-log.component";
 import {ConfigAddComponent} from "./views/dashboard/config-add/config-add.component";
 import {ConfigTypeComponent} from "./views/dashboard/config-type/config-type.component";
 import {ConfigScheduleComponent} from "./views/dashboard/config-schedule/config-schedule.component";
+import {EditComputerComponent} from "./pages/computers/edit-computer/edit-computer.component";
 
 const routes: Routes = [
   {
@@ -49,6 +50,8 @@ const routes: Routes = [
         component: ConfigTypeComponent},
       {path: 'dashboard/configschedule',
         component: ConfigScheduleComponent},
+      {path: 'computers/editcomputer',
+      component: EditComputerComponent},
 
 
       {

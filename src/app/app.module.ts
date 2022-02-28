@@ -50,6 +50,7 @@ import { ComputersComponent } from './pages/computers/computers.component';
 import { RequestsComponent } from './pages/requests/requests.component';
 import { AlertLogComponent } from './pages/logs/alert-log/alert-log.component';
 import { MsgLogComponent } from './pages/logs/msg-log/msg-log.component';
+import { EditComputerComponent } from './pages/computers/edit-computer/edit-computer.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -62,7 +63,7 @@ const APP_CONTAINERS = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ...APP_CONTAINERS, LogsComponent, ComputersComponent, RequestsComponent, AlertLogComponent, MsgLogComponent],
+  declarations: [AppComponent, ...APP_CONTAINERS, LogsComponent, ComputersComponent, RequestsComponent, AlertLogComponent, MsgLogComponent, EditComputerComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
