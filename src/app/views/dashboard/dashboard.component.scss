@@ -5,3 +5,18 @@
     }
   }
 }
+
+div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div{
+    button{
+      width: 25vw;
+      height: 10vw;
+      font-size:50px;
+    }
+  }
+}

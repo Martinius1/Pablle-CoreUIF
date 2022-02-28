@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -45,6 +45,11 @@ import {
 } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { LogsComponent } from './pages/logs/logs.component';
+import { ComputersComponent } from './pages/computers/computers.component';
+import { RequestsComponent } from './pages/requests/requests.component';
+import { AlertLogComponent } from './pages/logs/alert-log/alert-log.component';
+import { MsgLogComponent } from './pages/logs/msg-log/msg-log.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -57,7 +62,7 @@ const APP_CONTAINERS = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ...APP_CONTAINERS],
+  declarations: [AppComponent, ...APP_CONTAINERS, LogsComponent, ComputersComponent, RequestsComponent, AlertLogComponent, MsgLogComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -21,6 +21,9 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 
 import { WidgetsModule } from '../widgets/widgets.module';
+import { ConfigAddComponent } from './config-add/config-add.component';
+import { ConfigTypeComponent } from './config-type/config-type.component';
+import { ConfigScheduleComponent } from './config-schedule/config-schedule.component';
 
 @NgModule({
   imports: [
@@ -42,7 +45,7 @@ import { WidgetsModule } from '../widgets/widgets.module';
     TableModule,
     WidgetsModule
   ],
-  declarations: [DashboardComponent]
+  declarations: [DashboardComponent, ConfigAddComponent, ConfigTypeComponent, ConfigScheduleComponent]
 })
 export class DashboardModule {
 }

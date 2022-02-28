@@ -6,6 +6,14 @@ import { Page404Component } from './views/pages/page404/page404.component';
 import { Page500Component } from './views/pages/page500/page500.component';
 import { LoginComponent } from './views/pages/login/login.component';
 import { RegisterComponent } from './views/pages/register/register.component';
+import {LogsComponent} from "./pages/logs/logs.component";
+import {ComputersComponent} from "./pages/computers/computers.component";
+import {RequestsComponent} from "./pages/requests/requests.component";
+import {MsgLogComponent} from "./pages/logs/msg-log/msg-log.component";
+import {AlertLogComponent} from "./pages/logs/alert-log/alert-log.component";
+import {ConfigAddComponent} from "./views/dashboard/config-add/config-add.component";
+import {ConfigTypeComponent} from "./views/dashboard/config-type/config-type.component";
+import {ConfigScheduleComponent} from "./views/dashboard/config-schedule/config-schedule.component";
 
 const routes: Routes = [
   {
@@ -25,6 +33,24 @@ const routes: Routes = [
         loadChildren: () =>
           import('./views/dashboard/dashboard.module').then((m) => m.DashboardModule)
       },
+      {path: 'logs',
+        component: LogsComponent},
+      {path: 'computers',
+        component: ComputersComponent },
+      {path: 'requests',
+        component: RequestsComponent},
+      {path: 'logs/messages',
+        component: MsgLogComponent},
+      {path: 'logs/alert',
+        component: AlertLogComponent},
+      {path: 'dashboard/configadd',
+        component: ConfigAddComponent},
+      {path: 'dashboard/configtype',
+        component: ConfigTypeComponent},
+      {path: 'dashboard/configschedule',
+        component: ConfigScheduleComponent},
+
+
       {
         path: 'theme',
         loadChildren: () =>
