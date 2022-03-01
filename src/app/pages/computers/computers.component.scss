@@ -10,8 +10,30 @@
     justify-content: right;
     width: 100%;
     display: flex;
-    .table{
+    overflow:hidden;
+    overflow-y: scroll;
+    height: 40vw;
+    .table2{
+      .th.fixed {
+        top: 0;
+        z-index: 2;
+        position: sticky;
+        background-color: white;
+      }
     }
+
+  }
+  .scrollable {
+    height: 40vw;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: white;
+    position: sticky;
+    z-index: 2;
+    top: 0;
   }
 }
 
