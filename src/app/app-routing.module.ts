@@ -16,7 +16,6 @@ import {ConfigTypeComponent} from "./views/dashboard/config-type/config-type.com
 import {ConfigScheduleComponent} from "./views/dashboard/config-schedule/config-schedule.component";
 import {EditComputerComponent} from "./pages/computers/edit-computer/edit-computer.component";
 import {AddGroupComponent} from "./pages/computers/add-group/add-group.component";
-import {EditGroupComponent} from "./pages/computers/edit-group/edit-group.component";
 
 const routes: Routes = [
   {
