@@ -1,1 +1,35 @@
-<p>edit-computer works!</p>
+<div style="display: flex; height: 100vw; justify-content: left; width: 100%;  " class="input-group mb-3; ">
+  <div style="width: 30%;">
+    <label for="textbox" class="Config-name-label" style="font-size:1.5rem">PC</label>
+    <div class="odsazení"></div>
+    <label for="nickname" class="Config-name-label" style="font-size: 1.5rem">Nickname</label>
+    <div class="odsazení"></div>
+    <label for="IP" class="Config-name-label" style="font-size:1.5rem; ">IP</label>
+    <div class="odsazení"></div>
+    <label for="MAC" class="Config-name-label" style="font-size:1.5rem; ">MAC</label>
+    <div class="odsazení"></div>
+    <label for="groups" class="Config-name-label" style="font-size:1.5rem; ">Groups</label>
+  </div>
+
+
+  <div style="width: 70%">
+    <input type="text" id="textbox" name="textbox" placeholder="" value="123" inputmode="disable" style="" class="form-control" disabled>
+    <div class="input-group mb-3"  style="margin-top: 3vh">
+      <input class="form-control" ID="nickname" name="Nickname" type="text" placeholder="PC Nickname" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary" id="button-addon2" type="button">Rename</button>
+    </div>
+    <input type="text" id="IP" name="IP" placeholder="IP" value="135.44.55.1" style=" margin-top: 3vh;" class="form-control " disabled>
+    <input type="text" id="MAC" name="MAC" value="Ab:4C:44:87:C9" placeholder="" style="margin-top: 3vh;" class=" form-control" disabled>
+    <div class="input-group mb-3 " style="margin-top: 3vh;" id="groups">
+      <select class="form-select" id="inputGroupSelect02">
+        <option value="group1">group1</option>
+        <option value="group2">group2</option>
+        <option value="group3">group3</option>
+      </select>
+      <label class="input-group-text" for="inputGroupSelect02">Add</label>
+    </div>
+    <button class="btn btn-danger rounded-pill" type="button" style="float: right; margin-left: 3vw" routerLink="/computers">Back</button>
+    <button class="btn btn-primary rounded-pill" type="button" style="float: right" routerLink="/computers">Save</button>
+  </div>
+
+</div>
