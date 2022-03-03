@@ -52,6 +52,7 @@ import { AlertLogComponent } from './pages/logs/alert-log/alert-log.component';
 import { MsgLogComponent } from './pages/logs/msg-log/msg-log.component';
 import { EditComputerComponent } from './pages/computers/edit-computer/edit-computer.component';
 import { ChangeGroupComponent } from './pages/computers/change-group/change-group.component';
+import {DocsComponentsModule} from "@docs-components/docs-components.module";
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -92,6 +93,7 @@ const APP_CONTAINERS = [
     BadgeModule,
     ListGroupModule,
     CardModule,
+    DocsComponentsModule,
   ],
   providers: [
     {

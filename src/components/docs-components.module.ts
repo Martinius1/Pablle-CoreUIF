@@ -7,18 +7,21 @@ import { IconModule } from '@coreui/icons-angular';
 import { DocsExampleComponent } from './docs-example/docs-example.component';
 import { DocsLinkComponent } from './docs-link/docs-link.component';
 import { DocsCalloutComponent } from './docs-callout/docs-callout.component';
+import { AddIconComponent } from './icon-compoments/add-icon/add-icon.component';
 
 @NgModule({
   declarations: [
     DocsExampleComponent,
     DocsLinkComponent,
-    DocsCalloutComponent
+    DocsCalloutComponent,
+    AddIconComponent
   ],
-  exports: [
-    DocsExampleComponent,
-    DocsLinkComponent,
-    DocsCalloutComponent
-  ],
+    exports: [
+        DocsExampleComponent,
+        DocsLinkComponent,
+        DocsCalloutComponent,
+        AddIconComponent
+    ],
   imports: [
     CommonModule,
     NavModule,
