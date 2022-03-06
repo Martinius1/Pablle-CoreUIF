@@ -1,84 +1,129 @@
-<div class="whole-page">
-  <div class="config-name">
-    <label for="textbox" class="Config-name-label">Config Name</label>
-    <input type="text" id="textbox" name="textbox" placeholder="name" style="width: 30vw">
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Computers
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="card">
+          <div class="card-header">
+            <h3>Selected Computers</h3>
+          </div>
+          <div class="card-body">
+            <div class="table-computer scrollable">
+              <table class="table table-borderless table-hover">
+                <thead>
+                <tr class="table2 fixed">
+                  <th scope="col">Computer</th>
+                  <th scope="col">Nickname</th>
+                  <th scope="col">IP</th>
+                  <th scope="col">MAC</th>
+                  <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="column1">
+                  <td>1</td>
+                  <td>Main PC</td>
+                  <td>198.67.5.99</td>
+                  <td>10:92:AB:23:98</td>
+                  <td><button class="btn bg-light mat-raised-button"><svg cIcon class="me-2" name="cil-Trash"></svg>Remove</button></td>
+                </tr>
+                <tr class="column1">
+                  <td>3</td>
+                  <td>Better PC</td>
+                  <td>158.11.5.45</td>
+                  <td>10:92:AB:23:98</td>
+                  <td><button class="btn btn-light mat-raised-button"><svg cIcon class="me-2" name="cil-Trash"></svg>Remove</button></td>
+                </tr>
+                <tr class="column1">
+                  <td>45</td>
+                  <td>Server Mainframe</td>
+                  <td>155.11.22.52</td>
+                  <td>10:92:AB:23:98</td>
+                  <td><button class="btn btn-light mat-raised-button"><svg cIcon class="me-2" name="cil-Trash"></svg>Remove</button></td>
+                </tr>
+                <tr class="column1">
+                  <td>96</td>
+                  <td>Main PC</td>
+                  <td>198.67.5.99</td>
+                  <td>10:92:AB:23:98</td>
+                  <td><button class="btn btn-light mat-raised-button"><svg cIcon class="me-2" name="cil-Trash"></svg>Remove</button></td>
+                </tr>
+                <tr class="column1">
+                  <td>12</td>
+                  <td>Better PC</td>
+                  <td>158.11.5.45</td>
+                  <td>10:92:AB:23:98</td>
+                  <td><button class="btn btn-light mat-raised-button"><svg cIcon class="me-2" name="cil-Trash"></svg>Remove</button></td>
+                </tr>
+                <tr class="column1">
+                  <td>21</td>
+                  <td>Server Mainframe</td>
+                  <td>155.11.22.52</td>
+                  <td>10:92:AB:23:98</td>
+                  <td><button class="btn btn-light mat-raised-button"><svg cIcon class="me-2" name="cil-Trash"></svg>Remove</button></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary float-end"><svg cIcon class="me-2" name="cil-User-Follow"></svg>Add Computers</button>
+          </div>
+        </div>
+    </div>
   </div>
-  <div class="druhy-div">
-    <div class="jedna">
-      <label for="textbox" class="Config-name-label table-bordered">Add Computer</label>
-    </div>
-    <div class="dva">
-      <table class="table">
-        <thead>
-        <tr>
-          <th scope="col" class="border-delete" style="width: 30vw;">Client</th>
-        </tr>
-        </thead>
-        <tbody class="border-delete">
-        <tr >
-          <input type="text" id="clientname" name="clientname" placeholder="name" style="width: 30vw;">
-        </tr>
-        <tr>
-          <input type="text" id="clientIP" name="clientIP" placeholder="IP" style="width: 30vw;">
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <div style="padding-left: 15vw;padding-top: 2.5vh; ">
-      <button style="height: 8vh; width: 9vw; font-size: 1.25rem" class="btn-secondary"> ADD </button>
-    </div>
-  </div>
-  <div class="treti-div">
-    <div class="druhy-div">
-      <div class="jedna treti-pad">
-        <label for="textbox" class="Config-name-label table-bordered">Add Source Path</label>
-      </div>
-      <div class="dva ">
-        <table class="table">
-          <thead>
-          <tr>
-            <th scope="col" class="border-delete" id="name" style="width: 30vw;">source path</th>
-          </tr>
-          </thead>
-          <tbody class="border-delete">
-          <tr >
-            <input type="text" id="first" name="Path" placeholder="first path" style="width: 30vw;">
-          </tr>
-          <tr>
-            <input type="text" id="second" name="clientIP" placeholder="second path" style="width: 30vw;">
-          </tr>
-          </tbody>
-        </table>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Source
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
       </div>
     </div>
   </div>
-  <div>
-    <div class="druhy-div border-delete">
-      <div class="jedna treti-pad">
-        <label for="textbox" class="Config-name-label table-bordered">Destination Path</label>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Destination
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
       </div>
-      <div class="dva ">
-        <table class="table">
-          <thead>
-          <tr>
-            <th scope="col" class="border-delete" id="dest-path" style="width: 30vw;">destination path</th>
-          </tr>
-          </thead>
-          <tbody class="border-delete">
-          <tr >
-            <input type="text" id="des-path-first" name="Path" placeholder="first path" style="width: 30vw;">
-          </tr>
-          <tr>
-            <input type="text" id="des-path-second" name="clientIP" placeholder="second path" style="width: 30vw;">
-          </tr>
-          </tbody>
-        </table>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="headingFour">
+        Schedule
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>4444</div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Type
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>555</div>
       </div>
     </div>
   </div>
 </div>
-
-<div class="button-continue btn-primary">
-  <button routerLink="/dashboard/configschedule">Continue</button>
 </div>
 <div></div>
