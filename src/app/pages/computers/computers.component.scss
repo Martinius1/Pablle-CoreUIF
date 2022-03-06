@@ -1,0 +1,51 @@
+.whole-page-computers{
+  display: flex;
+  height: 100%;
+  .buttons-column{
+    justify-content: left;
+    width: 40%;
+
+  }
+  .card{
+    width: 100%;
+  }
+  .table-computer{
+    justify-content: right;
+    width: 100%;
+    display: flex;
+    overflow:hidden;
+    overflow-y: scroll;
+    height: 40vw;
+    .table2{
+      .th.fixed {
+        top: 0;
+        z-index: 2;
+        position: sticky;
+        background-color: white;
+      }
+    }
+
+  }
+  .scrollable {
+    height: 40vw;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: white;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+  }
+}
+
+.mx-auto {
+  margin-right:0px !important;
+  margin-left: 0px !important;
+}
+.groupy-padding{
+  padding-top: 1vh;
+}
+
+
