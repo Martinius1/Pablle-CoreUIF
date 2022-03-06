@@ -24,27 +24,29 @@ import { WidgetsModule } from '../widgets/widgets.module';
 import { ConfigAddComponent } from './config-add/config-add.component';
 import { ConfigTypeComponent } from './config-type/config-type.component';
 import { ConfigScheduleComponent } from './config-schedule/config-schedule.component';
+import {DocsComponentsModule} from "../../../components";
 
 @NgModule({
-  imports: [
-    DashboardRoutingModule,
-    CardModule,
-    NavModule,
-    IconModule,
-    TabsModule,
-    CommonModule,
-    GridModule,
-    ProgressModule,
-    ReactiveFormsModule,
-    ButtonModule,
-    FormModule,
-    ButtonModule,
-    ButtonGroupModule,
-    ChartjsModule,
-    AvatarModule,
-    TableModule,
-    WidgetsModule
-  ],
+    imports: [
+        DashboardRoutingModule,
+        CardModule,
+        NavModule,
+        IconModule,
+        TabsModule,
+        CommonModule,
+        GridModule,
+        ProgressModule,
+        ReactiveFormsModule,
+        ButtonModule,
+        FormModule,
+        ButtonModule,
+        ButtonGroupModule,
+        ChartjsModule,
+        AvatarModule,
+        TableModule,
+        WidgetsModule,
+        DocsComponentsModule
+    ],
   declarations: [DashboardComponent, ConfigAddComponent, ConfigTypeComponent, ConfigScheduleComponent]
 })
 export class DashboardModule {
