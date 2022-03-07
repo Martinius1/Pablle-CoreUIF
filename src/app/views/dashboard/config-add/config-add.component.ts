@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./config-add.component.scss']
 })
 export class ConfigAddComponent implements OnInit {
-
+  showMe:boolean = true
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+  toogleTag()
+  {
+    this.showMe=!this.showMe;
   }
 
 }
