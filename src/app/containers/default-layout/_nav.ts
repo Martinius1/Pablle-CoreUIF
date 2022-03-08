@@ -6,7 +6,7 @@ export const navItems: INavData[] = [
     name: 'Pablle'
   },
   {
-    name: 'Dashboard',
+    name: 'Configurations',
     url: '/dashboard',
     iconComponent: { name: 'cil-List' },
   },
@@ -16,7 +16,7 @@ export const navItems: INavData[] = [
     url: '/computers'
   },
   {
-    name: 'Monitor',
+    name: 'Requests',
     iconComponent: { name: 'cil-Chart' },
     url: '/requests'
   },
