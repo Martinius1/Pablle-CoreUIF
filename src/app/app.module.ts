@@ -53,6 +53,7 @@ import { IconModule, IconSetService } from '@coreui/icons-angular';
 import { LogsComponent } from './pages/logs/logs.component';
 import { ComputersComponent } from './pages/computers/computers.component';
 import { RequestsComponent } from './pages/requests/requests.component';
+import { ComputersListComponent } from './pages/requests/requests.component';
 import { AlertLogComponent } from './pages/logs/alert-log/alert-log.component';
 import { MsgLogComponent } from './pages/logs/msg-log/msg-log.component';
 import { EditComputerComponent } from './pages/computers/edit-computer/edit-computer.component';
@@ -70,7 +71,7 @@ const APP_CONTAINERS = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ...APP_CONTAINERS, LogsComponent, ComputersComponent, RequestsComponent, AlertLogComponent, MsgLogComponent, EditComputerComponent, ChangeGroupComponent],
+  declarations: [AppComponent, ...APP_CONTAINERS, LogsComponent, ComputersComponent, RequestsComponent, AlertLogComponent, MsgLogComponent, EditComputerComponent, ChangeGroupComponent, ComputersListComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
